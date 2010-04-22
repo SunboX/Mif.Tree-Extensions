@@ -28,7 +28,7 @@ Overwrites Mif.Tree´s dblClick handling for node renaming.
 
 Demo
 ---
-You can see an online demo of all these extensions in this shell: [comming soon](comming soon)
+You can see an online demo of all these extensions in this shell: [http://jsfiddle.net/TeuUG/](http://jsfiddle.net/TeuUG/)
 
 
 

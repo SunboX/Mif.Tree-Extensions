@@ -16,14 +16,14 @@ Mif.Tree.implement({
 	empty: function(){
 		if(this.root && this.root.getFirst()){
 			this.selected = false;
-			var next = this.root.getFirst();
+			var next = this.forest ? this.root.getFirst() : this.root;
             while(next){
 				next.getDOM('node').destroy();
 				next = next.getNext();
 			}
             this.$getIndex();
             Mif.Tree.Draw.update();
-			var next = this.root.getFirst();
+			var next = this.forest ? this.root.getFirst() : this.root;
 			while(next){
                 next.recursive(function(){
                 	if(this.id) delete Mif.ids[this.id];
