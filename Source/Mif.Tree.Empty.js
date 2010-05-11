@@ -18,7 +18,8 @@ Mif.Tree.implement({
 			this.selected = false;
 			var next = this.forest ? this.root.getFirst() : this.root;
             while(next){
-				next.getDOM('node').destroy();
+				var el = next.getDOM('node');
+				if(el) el.destroy();
 				next = next.getNext();
 			}
             this.$getIndex();

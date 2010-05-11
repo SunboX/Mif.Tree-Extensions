@@ -30,7 +30,7 @@ Mif.Tree.DblClickRename = new Class({
 	},
 	
 	onDblClick: function(event){
-		if(this.tree.mouse.node.getDepth() >= this.options.minDepth)
+		if(this.tree.mouse.node.getDepth && this.tree.mouse.node.getDepth() >= this.options.minDepth)
 			this.tree.mouse.node.rename();
 	}
 });
